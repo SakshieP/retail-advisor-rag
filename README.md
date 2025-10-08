@@ -4,12 +4,11 @@ Answer product questions from Amazon US Customer Reviews with grounded citations
 
 ## What this repo gives you
 - **Data prep**: load Kaggle TSVs, clean, and chunk reviews into passages
-- **Hybrid retrieval**: BM25 (lexical) + dense embeddings (MiniLM) + optional reranker
+- **Hybrid retrieval**: BM25 (lexical) + dense embeddings (MiniLM) 
 - **Grounded answerer**: extractive synthesis with inline citations like `[R1]`
 - **API**: FastAPI endpoint `/ask` that returns an answer + citations + top passages
 - **Eval**:
   - Retrieval **Precision@k** on *silver* labels auto-built from topic keywords
-  - Optional LLM-graded QA (if you set `OPENAI_API_KEY`)
 
 > Dataset: https://www.kaggle.com/datasets/cynthiarempel/amazon-us-customer-reviews-dataset
 
