@@ -1,6 +1,6 @@
 # Retail Advisor RAG (Amazon Reviews)
 
-Answer product questions from Amazon US Customer Reviews with grounded citations.
+Retail Advisor RAG answers product questions by retrieving relevant Amazon US Customer Reviews and composing grounded, cited answers. It uses a hybrid retriever (BM25 + MiniLM embeddings fused with RRF) over chunked review passages, and exposes a FastAPI endpoint for easy querying. Includes scripts for data prep, index build, and Precision@k retrieval evaluation, with optional cross-encoder reranking and LLM-graded QA.
 
 ## What this repo gives you
 - **Data prep**: load Kaggle TSVs, clean, and chunk reviews into passages
