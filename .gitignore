@@ -1,0 +1,33 @@
+# Python
+.venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.cache/
+.ipynb_checkpoints/
+
+# VS Code
+.vscode/
+!.vscode/settings.json
+!.vscode/launch.json
+!.vscode/tasks.json
+
+# Data (keep large artifacts out of git)
+data/raw/
+data/processed/
+index/
+
+# Environment & secrets
+.env
+.env.*
+kaggle.json
+.kaggle/
+
+# OS / misc
+.DS_Store
+*.log
+
+# Binary artifacts
+*.parquet
+*.npy
+*.index
